@@ -2,9 +2,9 @@
 
 ## 📊 Project Overview
 
-A Python-based face recognition attendance system that uses computer vision to identify registered individuals and automatically record their attendance.
+A Python-based face recognition attendance system that uses computer vision to recognize registered individuals and record their attendance.
 
-The application captures face images, trains a face recognition model, recognizes faces through a webcam, and stores attendance records with the person's ID, name, date, and time.
+The application uses a webcam to detect and recognize faces, trains a face recognition model, and generates attendance records with the person's ID, name, date, and time.
 
 ## 🔄 Application Workflow
 
@@ -13,30 +13,30 @@ Check Camera
 → Train Images  
 → Recognize Face  
 → Record Attendance  
-→ Export Attendance to CSV
+→ Generate Attendance CSV
 
 ## 🔍 Key Features
 
 - Webcam camera testing
+- Face detection using Haar Cascade
 - Face image capture
-- Face dataset creation
 - Face recognition model training
 - Real-time face recognition
 - Student ID and name identification
 - Automatic attendance recording
 - Date and time tracking
 - Duplicate attendance prevention
-- CSV attendance export
+- Attendance export to CSV
 
 ## 🛠️ Technologies & Libraries
 
 - Python
 - OpenCV
 - LBPH Face Recognizer
+- Haar Cascade Classifier
 - NumPy
 - Pandas
 - Pillow
-- Haar Cascade Classifier
 
 ## 🎯 Key Skills Demonstrated
 
@@ -46,9 +46,9 @@ Check Camera
 - Image Processing
 - OpenCV
 - Machine Learning
+- Real-Time Video Processing
 - Data Handling with Pandas
 - CSV Data Management
-- Real-Time Video Processing
 - Attendance Automation
 
 ## 📁 Project Structure
@@ -56,14 +56,11 @@ Check Camera
 ```text
 Face-Recognition-Attendance-System/
 │
-├── main.py
+├── Capture_Image.py
 ├── Home.py
 ├── Recognize.py
 ├── Train_Image.py
-├── Capture_Image.py
 ├── check_camera.py
-├── TrainingImage/
-├── TrainingImageLabel/
-├── StudentDetails/
-├── Attendance/
+├── haarcascade_frontalface_default.xml
+├── main.py
 └── README.md
